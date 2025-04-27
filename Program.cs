@@ -43,12 +43,12 @@ var host = Host.CreateDefaultBuilder(args)
         kernelBuilder.AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);
 
         // Add the plugins - uncomment to use them
-        kernelBuilder.Plugins
-            .AddFromType<AuthorEmailPlugin>()
-            .AddFromType<PersonalDetailsPlugin>()
-            .AddFromType<PublicHolidaysPlugin>()
-            .AddFromType<DateHelpers>()
-            .AddFromType<MyTimePlugin>();
+        // kernelBuilder.Plugins
+        //     .AddFromType<AuthorEmailPlugin>()
+        //     .AddFromType<PersonalDetailsPlugin>()
+        //     .AddFromType<PublicHolidaysPlugin>()
+        //     .AddFromType<DateHelpers>()
+        //     .AddFromType<MyTimePlugin>();
             
         // Extra plugins to play with:
             // .AddFromType<MyPluginTemplate>()
@@ -92,7 +92,7 @@ while (true)
     // Set up automatic function calling
     OpenAIPromptExecutionSettings settings = new()
     {
-        FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
+        // FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
     };
 
     // Get the AI response streamed back to the console

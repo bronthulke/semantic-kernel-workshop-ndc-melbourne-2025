@@ -97,7 +97,7 @@ Also take a look at the `MyTimePlugin.cs` file - it contains a function to get t
 Let's start using this and some other plugins now.
 
 1. Go to the `Program.cs` file
-2. Uncomment lines 47-51, which will be as follows:
+2. Uncomment lines 46-51, which will be as follows:
 
     ```
     kernelBuilder.Plugins
@@ -108,7 +108,7 @@ Let's start using this and some other plugins now.
         .AddFromType<MyTimePlugin>();
     ```
 
-3. Uncomment line 96, which will be as follows:
+3. Uncomment line 95, which will be as follows:
 
     ```
     FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
