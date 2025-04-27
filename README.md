@@ -8,6 +8,18 @@ If you are viewing this during the conference workshop, I'll be running through 
 
 Let's get going!
 
+## Grab the repository
+You can either open this repository using a GitHub Codespace, or by cloning it onto your computer and using your preferred IDE (Visual Studio / Visual Studio Code / Rider / etc).
+
+### Opening in Codespace
+1. Go to this link to [create a Codespace](https://github.com/codespaces/new/bronthulke/semantic-kernel-workshop-ndc-melbourne-2025?skip_quickstart=true&machine=standardLinux32gb&repo=816523464&ref=main&geo=Australia)
+2. Select your preferred region and size, though I recommend `4-Core`.
+3. Click the green `Create codespace` button and wait for the magic to happen.
+
+### Cloning Locally
+1. At the top of this page, click **Clone**
+2. Use your favourite method to clone the code onto your computer (e.g. using CLI or your IDE's tooling).
+
 ## Set up Azure Foundry
 
 1. Go to the [Azure AI Foundry](https://ai.azure.com) and sign in using your Microsoft account that has an active Azure subscription
@@ -32,19 +44,10 @@ We're now ready to start using this deployed model from our code - so let's get 
 
 > Hint: try using the playground and checking on your model's metrics, by going to the "Models + endpoints" from the left hand side menu. It can be a great way to see how your requests equate to tokens.  Note that the metrics can take a few minutes to update after sending requests in the playground.
 
-## Open the repository
-You can either option this repository using a GitHub Codespace, or by cloning it onto your computer and using your preferred IDE (Visual Studio / Visual Studio Code / Rider / etc).
-
-### Opening in Codespace
-1. Go to this link to [create a Codespace](https://github.com/codespaces/new/bronthulke/Phi3ConsoleDemo?skip_quickstart=true&machine=standardLinux32gb&repo=816523464&ref=main&geo=Australia)
-2. Select your preferred region and size, though I recommend `4-Core`.
-3. Click the green `Create codespace` button and wait for the magic to happen.
-
-### Cloning Locally
-1. At the top of this page, click **Clone**
-2. Use your favourite method to clone the code onto your computer (e.g. using CLI or your IDE's tooling).
-
 ## Setting up environment
+
+Back in your Codespace or VS Code (or whatever IDE you're using), let's get started setting up your environment.
+
 1. Create a new file `appsettings.Development.json` and add the following with your own data for each value.  If you are not planning on testing with SendGrid to send actual emails, don't worry about the `FromEmail` and `FromName` values.
 
     ```
