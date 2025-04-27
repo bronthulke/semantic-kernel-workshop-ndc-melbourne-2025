@@ -20,7 +20,7 @@ You can either open this repository using a GitHub Codespace, or by cloning it o
 1. At the top of this page, click **Clone**
 2. Use your favourite method to clone the code onto your computer (e.g. using CLI or your IDE's tooling).
 
-## Set up Azure Foundry
+## Set up Azure AI Foundry
 
 1. Go to the [Azure AI Foundry](https://ai.azure.com) and sign in using your Microsoft account that has an active Azure subscription
 2. Click the **Create project** button
