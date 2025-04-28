@@ -37,7 +37,7 @@ var host = Host.CreateDefaultBuilder(args)
         kernelBuilder.Services.AddSingleton(configuration);
 
         // With Azure Open AI
-        var modelId = "gpt-4o";
+        var modelId = configuration["AzureModel"];
         var apiKey = configuration["AzureOpenAIAPIKey"];
         var endpoint = configuration["AzureOpenAIEndpoint"];
         kernelBuilder.AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);

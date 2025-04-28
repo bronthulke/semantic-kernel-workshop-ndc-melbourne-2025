@@ -33,7 +33,7 @@ You can either open this repository using a GitHub Codespace, or by cloning it o
 
     It also includes creating a Key Vault and Storage Account. 
 
-    Once created, you should land on the Project page, where you can grab your **API Key** and **Azure AI model inference endpoint**. We will use these values later.
+    Once created, you should land on the project Overview page, where you can grab your **API Key** and **Azure OpenAI Service endpoint** (click into the "Included capabilities" section for "Azure OpenAI Service"). We will use these values later.
 5. In the left hand side menu, click **Model catalog**
 
     Select a model that you'd like to use.  The choice is yours, but be aware that different models will behave differently and will cost different amounts.  For the demo version we will be using "gpt-4o".
@@ -52,13 +52,17 @@ Back in your Codespace or VS Code (or whatever IDE you're using), let's get star
 
     ```
     {
-        "AzureOpenAIEndpoint": "<value from AI Foundry>",
+        "AzureOpenAIEndpoint": "<value from AI Foundry for Azure OpenAI Service endpoint>",
+        "AzureModel": "<model name>",
         "FromEmail": "<your SendGrid authenticated email>",
         "FromName": "<your name>",
         "OwnerFirstName": "<first name>",
         "OwnerLastName": "<last name>"
     }
     ```
+
+    Note: for `AzureOpenAIEndpoint` you need to go into Azure AI Foundry, to the project Overview, and under the Included Capabilities section click into the "Azure OpenAI Service" section, which will then contain the endpoint.  It will look something like `https://ai-hubpersonalassistantworkshop123456789.openai.azure.com/`
+
 2. Open a command prompt within your VS Code / Codespace (hint: in VS Code, hit `Ctrl`+`~`)
 3. Add the following secrets by running each of these commands with your own values from previous steps:
     ```
