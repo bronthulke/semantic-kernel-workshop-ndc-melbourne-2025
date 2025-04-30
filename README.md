@@ -20,7 +20,15 @@ You can either open this repository using a GitHub Codespace, or by cloning it o
 1. At the top of this page, click **Clone**
 2. Use your favourite method to clone the code onto your computer (e.g. using CLI or your IDE's tooling).
 
-## Set up Azure AI Foundry
+## Set up Open AI Service
+
+For this workshop, you have the choice of setting up your own resources in Azure, or you can use a temporary event API key and endpoint.
+
+### Event-only key
+
+To use an event-only key (valid for the next 7 days), go to https://aka.ms/sk-ndc-melb and follow the instructions to get an Open AI Service endpoint and API Key.
+
+### Azure AI Foundry
 
 1. Go to the [Azure AI Foundry](https://ai.azure.com) and sign in using your Microsoft account that has an active Azure subscription
 2. Click the **Create project** button
